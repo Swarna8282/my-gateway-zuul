@@ -1,0 +1,12 @@
+---
+spring:
+  cloud:
+    config:
+      name: my-gateway-zuul
+      discovery:
+        service-id: my-config-server
+        enabled: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
